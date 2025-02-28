@@ -6,6 +6,34 @@ import sys
 sys.stdin = open('D:\\Coding Env\\4. PYTHON\\input.txt', 'r')
 sys.stdout = open('D:\\Coding Env\\4. PYTHON\\output.txt', 'w')
 
+
+def is_valid_parentheses(s: str) -> bool:
+    """
+    Check if string has valid parentheses using stack.
+    Returns True if valid, False otherwise.
+    """
+    stack = []
+    # Dictionary mapping closing brackets to their corresponding opening brackets
+    brackets = {
+        ')': '(',
+        '}': '{',
+        ']': '['
+    }
+    
+    for char in s:
+        # If opening bracket, push to stack
+        if char in '({[':
+            stack.append(char)
+        # If closing bracket
+        elif char in ')}]':
+            # Check if stack is empty or brackets don't match
+            if not stack or stack.pop() != brackets[char]:
+                return False
+    
+    # Check if any unclosed brackets remain
+    return len(stack) == 0
+
+
 # Stack
 '''<----------- Applications of stack ----------->'''
 
