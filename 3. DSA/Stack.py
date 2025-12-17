@@ -3,8 +3,8 @@ from collections import deque
 from queue import LifoQueue, Queue
 import queue
 import sys
-sys.stdin = open('D:\\Coding Env\\4. PYTHON\\input.txt', 'r')
-sys.stdout = open('D:\\Coding Env\\4. PYTHON\\output.txt', 'w')
+sys.stdin = open('/Users/mayank/Development/Coding Env/4. PYTHON/input.txt', 'r')
+sys.stdout = open('/Users/mayank/Development/Coding Env/4. PYTHON/output.txt', 'w')
 
 
 def is_valid_parentheses(s: str) -> bool:

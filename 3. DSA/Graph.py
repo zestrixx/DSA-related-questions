@@ -1,6 +1,6 @@
 import sys
-sys.stdin = open('D:\\Coding Env\\4. PYTHON\\input.txt', 'r')
-sys.stdout = open('D:\\Coding Env\\4. PYTHON\\output.txt', 'w')
+sys.stdin = open('/Users/mayank/Development/Coding Env/4. PYTHON/input.txt', 'r')
+sys.stdout = open('/Users/mayank/Development/Coding Env/4. PYTHON/output.txt', 'w')
 
 """
 Undirected graphs - have edges that do not have a direction. The edges indicate a two-way relationship, in that each edge can be traversed in both directions.
